@@ -1,5 +1,5 @@
 import org.junit.Before;
-import org.junit.Ignore;
+//import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -17,11 +17,10 @@ public class TwoferTest {
     public void noNameGiven() {
         String input = null;
         String expected = "One for you, one for me.";
-
+        
         assertEquals(expected, twofer.twofer(input));
     }
 
-    @Ignore("Remove to run test")
     @Test
     public void aNameGiven() {
         String input = "Alice";
@@ -30,7 +29,7 @@ public class TwoferTest {
         assertEquals(expected, twofer.twofer(input));
     }
 
-    @Ignore("Remove to run test")
+
     @Test
     public void anotherNameGiven() {
         String input = "Bob";
@@ -41,7 +40,6 @@ public class TwoferTest {
 
     /* Track specific */
 
-    @Ignore("Remove to run test")
     @Test
     public void emptyStringIsNotTheSameAsNull() {
         String input = "";
