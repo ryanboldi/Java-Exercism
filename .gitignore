@@ -1,3 +1,6 @@
 
-hello-world/.exercism/metadata.json
+**/.exercism/
 **/.gradle/**
+**/build/
+**/.project
+**/org.eclipse.buildship.core.prefs
