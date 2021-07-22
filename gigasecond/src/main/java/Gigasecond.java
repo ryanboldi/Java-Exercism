@@ -4,7 +4,7 @@ import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalUnit;
 
 public class Gigasecond {
-    TemporalUnit seconds = ChronoUnit.SECONDS;
+    static final TemporalUnit seconds = ChronoUnit.SECONDS;
     LocalDateTime afterGiga;
 
     public Gigasecond(LocalDate moment) {
