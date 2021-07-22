@@ -4,16 +4,15 @@ import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalUnit;
 
 public class Gigasecond {
-    static final TemporalUnit seconds = ChronoUnit.SECONDS;
+    private static final long GIGASECOND = 1_000_000_000L;
     LocalDateTime afterGiga;
 
     public Gigasecond(LocalDate moment) {
-        LocalDateTime momentTime = moment.atStartOfDay();
-        afterGiga = momentTime.plus(1000000000, seconds);
+        this(moment.atStartOfDay());
     }
 
     public Gigasecond(LocalDateTime moment) {
-        afterGiga = moment.plus(1000000000, seconds);
+        afterGiga = moment.plusSeconds(GIGASECOND);
     }
 
     public LocalDateTime getDateTime() {
