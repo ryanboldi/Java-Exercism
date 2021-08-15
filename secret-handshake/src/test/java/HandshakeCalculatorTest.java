@@ -92,4 +92,10 @@ public class HandshakeCalculatorTest {
                 handshakeCalculator.calculateHandshake(0));
     }
 
+    @Test
+    public void testThatHandlesMoreThan5BinaryPlaces() {
+        assertEquals(
+            asList(Signal.DOUBLE_BLINK, Signal.WINK),
+            handshakeCalculator.calculateHandshake(51));
+    }
 }
