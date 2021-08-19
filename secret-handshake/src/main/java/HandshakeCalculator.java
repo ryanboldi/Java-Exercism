@@ -5,7 +5,7 @@ import java.util.Collections;
 
 class HandshakeCalculator {
     List<Signal> calculateHandshake(int number) {
-        if (number > 127) throw new InvalidParameterException();
+        if (number > 127) { throw new IllegalArgumentException(); }
         //                  [1  2  4  8 16 32 64]
         int[] placeValues = {0, 0, 0, 0, 0, 0, 0};
         int remainder = number;
